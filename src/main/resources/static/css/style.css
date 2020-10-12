@@ -1,0 +1,23 @@
+body {
+    background: rgba(0,0,0,0.84);
+    color: white;
+    text-align: center;
+}
+
+table{
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+tr{
+    height: 40px;
+}
+
+a{
+    color: darkorange;
+}
+
+a:hover{
+    color: orangered;
+}

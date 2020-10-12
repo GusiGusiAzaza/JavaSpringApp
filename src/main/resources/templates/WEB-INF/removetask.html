@@ -1,0 +1,22 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8" />
+    <title>Remove Task</title>
+    <link rel="stylesheet" type="text/css" th:href="@{/css/style.css}"/>
+</head>
+<body>
+<div class="container">
+    <h1>Remove task:</h1>
+    <form th:action="@{/removetask}"
+          th:object="${taskForm}" method="POST">
+        <p>Task to remove:
+            <input type="text" th:field="*{task}" />
+        </p>
+        <input class ="button-main-page" type="submit" value="Remove" />
+    </form>
+</div>
+<div th:if="${errorMessage}" th:utext="${errorMessage}"
+     style="color:red;font-style:italic;">
+</div>
+</body>
